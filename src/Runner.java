@@ -21,6 +21,7 @@ public class Runner {
 
         while (counter < THREADS) {
             new Thread(new Worker()).start();
+            counter++;
         }
     }
 
